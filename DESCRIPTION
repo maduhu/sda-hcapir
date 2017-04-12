@@ -1,0 +1,42 @@
+Package: HarvestChoice
+Type: Package
+Version: 1.0
+Date: 2016-07-23
+Title: Gridded Agricultural, Biophysical, and Socio-Economic Indicators
+    for Africa South of the Sahara (HarvestChoice/IFPRI)
+Authors@R: c(
+    person("Melanie", "Bacou", role=c("aut", "cre"), email="mel@mbacou.com"),
+	  person("Maria", "Comanescu", role="ctb", email="mery.comanescu@gmail.com"),
+	  person("Ulrike", "Wood-Sichra", role="ctb", email="u.wood-sichra@cgiar.org"),
+	  person("Jawoo", "Koo", role="ctb", email="j.koo@cgiar.org"),
+	  person("Carlo", "Azzarri", role="ctb", email="c.azzarri@cgiar.org"),
+	  person("Joseph", "Green", role="ctb", email="josephgreen@gmail.com"),
+	  person("Zhe", "Guo", role="ctb", email="z.guo@cgiar.org"))
+Depends:
+    R (>= 2.14.0),
+    httr,
+    data.table
+Imports:
+    jsonlite,
+    lattice
+Suggests:
+    raster,
+    sp,
+    classInt,
+    RColorBrewer,
+    foreign,
+    rgdal,
+    tmap
+LazyData: yes
+Description: Methods to retrieve, summarize, plot, and interact with  HarvestChoice
+    5-arc-minute spatial layers for Africa South of the Sahara (over 800 indicators
+    currently available). This package uses HarvestChoice Data Services documented at
+    http://harvestchoice.github.io/hc-api3/. HarvestChoice is a program of the
+    International Food Policy Research Institute (IFPRI), Washington DC.
+License: GPL (>= 3)
+URL: http://harvestchoice.github.io/hc-api3/, http://harvestchoice.org/
+BugReports: http://github.com/harvestchoice/hc-api
+MailingList: support@harvestchoice.org
+Packaged: 2016-07-23 11:20:02 UTC; mbacou
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
